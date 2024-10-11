@@ -22,7 +22,7 @@ action_reason: "has received 5 reports"
 ---
 # Remove posts/comments with specific keywords/phrases
 type: any
-body (includes-word): ["kiwi","janny","jannies","janitor","autist","ywnbaw","regarded","echo","restarted","virtue","burger","grass","sperg","schizo","geg","echochamber","soyjak","tranny","trannies","witch","faggot","gg","tard","retard","downvoting","reddit","troon","lynch","scalp","retarded","nigger","nigga","doxbin"] # includes-word is the default check method for most text-based checks including combined checks of multiple fields (see: https://www.reddit.com/wiki/automoderator/full-documentation/#wiki_matching_modifiers) || includes-word means that only whole words/phrases are matched, no letter/number/underscore can come to the right or left of the word/phrase
+body (includes-word): ["keywords"] # includes-word is the default check method for most text-based checks including combined checks of multiple fields (see: https://www.reddit.com/wiki/automoderator/full-documentation/#wiki_matching_modifiers) || includes-word means that only whole words/phrases are matched, no letter/number/underscore can come to the right or left of the word/phrase
 action: filter
 action_reason: 'Autoblock Roll Out'
 ---

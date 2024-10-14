@@ -1,0 +1,24 @@
+There are 2 methods of running the script in general. 
+Either: 
+curl -O https://raw.githubusercontent.com/overkillwtf/folon-steamdeck-installer/main/fallout.sh && \
+chmod +x fallout.sh && \
+./fallout.sh
+
+Or: 
+bash <(curl -s https://raw.githubusercontent.com/overkillwtf/folon-steamdeck-installer/main/fallout.sh)
+ 
+Additional Commands (Update Disablers, Explained in video):
+ 
+Fallout 4 installed on SSD:
+Enable Updates:
+sudo chattr -i "$HOME/.steam/steam/steamapps/appmanifest_377160.acf"
+ 
+Disable Updates:
+sudo chattr +i "$HOME/.steam/steam/steamapps/appmanifest_377160.acf"
+
+Fallout 4 installed on SD Card: 
+Enable Updates:
+sudo chattr -i "/run/media/mmcblk0p1/steamapps/appmanifest_377160.acf" 
+
+Disable Updates:
+sudo chattr +i "/run/media/mmcblk0p1/steamapps/appmanifest_377160.acf"
